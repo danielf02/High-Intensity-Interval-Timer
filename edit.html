@@ -1,0 +1,60 @@
+<!--
+    Authors:    Daniel Ford, Adam Smith
+    Date:       2 Dec 2014
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HIITimer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/toastr.min.css">
+</head>
+<body>
+<div class="phoneSize center">
+    <h2 id="workoutTitle">New Workout</h2>
+    <input type="text" id="workoutName" class="center" placeholder="Workout Name"/>
+    <div class="separation"></div>
+    <table>
+        <tr>
+            <td class="textColumn">
+                Exercise Name:
+            </td>
+            <td class="controlColumn">
+                <input type="text" id="exerciseName" placeholder="eg. Push ups"/>
+            </td>
+        </tr>
+        <tr>
+            <td class="textColumn">
+                Active Time:
+            </td>
+            <td class="controlColumn">
+                <input type="number" max="10800" id="activeTime" min="0" value="0"/>
+            </td>
+        </tr>
+        <tr>
+            <td class="textColumn">
+                Rest Time:
+            </td>
+            <td class="controlColumn">
+                <input type="number" max="10800" id="restTime" min="0" value="0"/>
+            </td>
+        </tr>
+    </table>
+    <input type="button" class="formButton" onclick="addExercise()" value="Add exercise"/>
+    <ul id="exercises">
+    </ul>
+    <div id="trash">Drag exercises here to delete them</div>
+    <div class="separation"></div>
+    <input type="button" class="formButton" value="Back" onclick="navigateBack()"/>
+    <input type="button" class="formButton" value="Delete Workout" onclick="confirmToast('deleteWorkout', 'Delete Workout?', deleteWorkout, document.getElementById('workoutName').value)"/>
+    <input type="button" class="formButton" value="Save Workout" onclick="saveWorkout()"/>
+    <input type="button" class="formButton" value="Begin Workout" onclick="beginWorkoutClick()"/>
+
+</div>
+<script src="scripts/jquery-1.11.1.min.js"></script>
+<script src="scripts/jquery-ui-1.11.2.custom/jquery-ui.min.js"></script>
+<script src="scripts/toastr.min.js"></script>
+<script src="scripts/common.js"></script>
+<script src="scripts/edit.js"></script>
+</body>
+</html>

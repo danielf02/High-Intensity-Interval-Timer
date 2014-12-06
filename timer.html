@@ -1,0 +1,57 @@
+<!--
+    Authors:    Daniel Ford, Adam Smith
+    Date:       2 Dec 2014
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Workout Name</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/toastr.min.css">
+</head>
+<body>
+<div id="timerContent" class="desktopSize center">
+    <div id="currentExercise" class="timerExercise timerDisplayText center"></div>
+    <p class="center" id="timeRemaining"></p>
+    <table class="center">
+        <tr id="repetitionEntry">
+            <td class="timerDataEntry">
+                Repetitions:
+            </td>
+            <td>
+                <input class="timerDataEntry" type="number" id="repCount" value="1" min="0" max="100"/>
+            </td>
+        </tr>
+        <tr class="timerDisplayText" id="repetitionDisplay">
+            <td id="repetitionCountDisplay">
+                # Repetitions Remaining
+            </td>
+        </tr>
+    </table>
+    <table class="center">
+        <tr class="timerSpacing">
+            <td>
+                <input type="button" id="pauseWorkout" class="formButton" onclick="startWorkout()" value="Start"/>
+            </td>
+        </tr>
+        <tr class="timerSpacing">
+            <td>
+                <input type="button" id="stopWorkout" class="formButton" onclick="confirmToast('quitWorkout', 'Quit Workout?', goToPage, 'main')" value="End Workout"/>
+            </td>
+        </tr>
+    </table>
+    <div id="nextExercise" class="timerExercise timerDisplayText center"></div>
+</div>
+<script src="scripts/jquery-1.11.1.min.js"></script>
+<script src="scripts/jquery-ui-1.11.2.custom/jquery-ui.min.js"></script>
+<script src="scripts/toastr.min.js"></script>
+<script src="scripts/common.js"></script>
+<script src="scripts/timer.js"></script>
+
+<script type="application/javascript">
+    $(document).ready(initializeTimer);
+</script>
+
+</body>
+</html>
