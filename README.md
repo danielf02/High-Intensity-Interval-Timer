@@ -1,4 +1,4 @@
-High-Intensity-Interval-Timer
+High-Intensity Interval Timer
 =============================
 
 HIITimer Web Application
