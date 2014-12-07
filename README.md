@@ -14,7 +14,13 @@ This was an application built for CS530 Designing User Interfaces at Drexel Univ
 coded in HTML5, Javascript, CSS3, and uses the JQuery and toastr library for messaging.
 
 Application Goals:
-This program was created for two reasons--necessity and school. Since we often perform high-intensity interval training, we found there to be to application out there that was simple, easy-to-use, and not too complex with a bunch of features you don't wan't or will never use. This application is designed to be so simple, that even the newest of new users can open and immediately know how to use. Coincidentally, we needed an idea of an application for a school project. The scope of this application, for now, is limited to desktop/laptop use. However, we fully intend of bringing this to mobile platforms as well (in a browser, and potentially in a mobile application for Android).
+This program was created for two reasons--necessity and school. Since we often perform high-intensity interval training,
+we found there to be to a necessity for an application that was simple, easy-to-use, and not too complex with a bunch of features
+you don't wan't or will never use. This application is designed to be so simple, that even the newest of new users can
+open and immediately know how to use. Coincidentally, we needed an idea of an application for a school project. The scope
+of this application, for now, is limited to desktop/laptop use.
+We want to evolve this application based on the needs of the average user, we fully intend of bringing this to mobile platforms as
+well (in a browser, and potentially in a mobile application for Android).
 
 How to install:
 Using this application is very simple! To do so, you must simply download all contents of this repository
